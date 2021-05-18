@@ -1,0 +1,80 @@
+<section class="ui segment">
+    <h2 class="ui header">
+        ${_station.name}
+    </h2>
+    <div class="ui five cards inverted">
+        <div class="card">
+            <div class="extra">
+                <i class="thumbtack icon purple huge right floated"></i>
+                <h3 class="header">${_station.name}</h3>
+                <ul class="ui list">
+                    <li>Lat: ${_station.latitude.format('00.00')}</li>
+                    <li>Lng: ${_station.longitude.format('00.00')}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <i class="cloud sun icon red huge right floated"></i>
+                <h3 class="header">Weather</h3>
+                #{if _station.readings.size() > 1}
+                <h4 class="header">${_station.codeToText(_station.readings.code.last())}</h4>
+                #{/if}
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <i class="temperature high icon blue huge right floated"></i>
+                <h3 class="header">Temp</h3>
+                <ul class="ui list">
+                    #{if _station.readings.size() > 1}
+                    <li>${_station.readings.temperature.last()} C</li>
+                    <li>${_station.calculateFahrenheit(_station.readings.temperature.last())} F</li>
+                    <li>Min: ${_station.readings.temperature.min()} C</li>
+                    <li>Max: ${_station.readings.temperature.max()} C</li>
+                    #{/if}
+
+                    #{if _station.tempTrend}
+                    <li> <i class="arrows alternate horizontal icon large blue right floated"></i> </li>
+                    #{/if}
+                    #{if _station.tempTrend}
+                    <li> <i class="arrow up icon large blue right floated"></i> </li>
+                    #{/if}
+                    #{if _station.tempTrend}
+                    <li>  <i class="arrow down icon large blue right floated"></i> </li>
+                    #{/if}
+                    <li> ${_station.tempTrend} </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <i class="wind icon green huge right floated "></i>
+                <h3 class="header">Wind</h3>
+                <ul class="ui list">
+                    #{if _station.readings.size() > 1}
+                    <li>${_station.windBeaufort(_station.readings.windSpeed.last())} bft</li>
+                    <li>${_station.windDirection(_station.readings.windDirection.last())}</li>
+                    <li>Feels like: ${_station.windChill(_station.readings.windSpeed.last(), _station.readings.temperature.last())}</li>
+                    <li>Min: ${_station.readings.windSpeed.min()}</li>
+                    <li>Max: ${_station.readings.windSpeed.max()}</li>
+                    #{/if}
+                </ul>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <i class="compress arrows alternate icon yellow huge right floated "></i>
+                <h3 class="header">Pressure</h3>
+                <ul class="ui list">
+                #{if _station.readings.size() > 1}
+                    <li class="header">${_station.pressure(_station.readings.pressure.last())} hpa</li>
+                    <li class="header">Min: ${_station.pressure(_station.readings.pressure.min())} </li>
+                    <li class="header">Max: ${_station.pressure(_station.readings.pressure.max())} </li>
+                #{/if}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
