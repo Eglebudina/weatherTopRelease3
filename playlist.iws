@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d1f325e-3277-4c04-9b3d-f28684b8510d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/models/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/Trends.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/Trends.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/tags/stationdetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/stationdetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist.iws" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +82,7 @@
       <workItem from="1621072446301" duration="41930000" />
       <workItem from="1621195167112" duration="37922000" />
       <workItem from="1621455944064" duration="217000" />
-      <workItem from="1621456184039" duration="3384000" />
+      <workItem from="1621456184039" duration="3833000" />
     </task>
     <servers />
   </component>
