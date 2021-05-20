@@ -7,7 +7,7 @@ import java.util.List;
 public class Trends {
     
     public static String tempTrend(List<Reading> readings) {
-        if (readings.size() > 2) {
+        if (readings.size() >= 3) {
             if (readings.get(readings.size()-1).temperature > readings.get(readings.size() - 2).temperature
                     && readings.get(readings.size() - 2).temperature > readings.get(readings.size() - 3).temperature) {
                 return "UP";
@@ -21,7 +21,7 @@ public class Trends {
     }
 
     public static String windTrend(List<Reading> readings) {
-        if (readings.size() > 2) {
+        if (readings.size() >= 3) {
             if (readings.get(readings.size()-1).windSpeed > readings.get(readings.size() - 2).windSpeed
                     && readings.get(readings.size() - 2).windSpeed > readings.get(readings.size() - 3).windSpeed) {
                 return "UP";
@@ -35,7 +35,7 @@ public class Trends {
     }
 
     public static String presTrend(List<Reading> readings) {
-        if (readings.size() > 2) {
+        if (readings.size() >= 3) {
             if (readings.get(readings.size()-1).pressure > readings.get(readings.size() - 2).pressure
                     && readings.get(readings.size() - 2).pressure > readings.get(readings.size() - 3).pressure) {
                 return "UP";
