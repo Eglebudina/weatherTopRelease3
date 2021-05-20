@@ -34,15 +34,9 @@
                     <li>Max: ${_station.readings.temperature.max()} C</li>
                     #{/if}
 
-                    #{if _station.tempTrend}
-                    <li> <i class="arrows alternate horizontal icon large blue right floated"></i> </li>
-                    #{/if}
-                    #{if _station.tempTrend}
-                    <li> <i class="arrow up icon large blue right floated"></i> </li>
-                    #{/if}
-                    #{if _station.tempTrend}
-                    <li>  <i class="arrow down icon large blue right floated"></i> </li>
-                    #{/if}
+                    <li> <i class="arrows ${_station.tempTrend} icon large blue right floated"></i> </li>
+                    <li> <i class="${_station.tempTrend} icon large blue right floated"></i> </li>
+                    <li>  <i class="${_station.tempTrend} icon large blue right floated"></i> </li>
                     <li> ${_station.tempTrend} </li>
                 </ul>
             </div>

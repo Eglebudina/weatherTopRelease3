@@ -10,12 +10,12 @@ public class Trends {
         if (readings.size() >= 3) {
             if (readings.get(readings.size()-1).temperature > readings.get(readings.size() - 2).temperature
                     && readings.get(readings.size() - 2).temperature > readings.get(readings.size() - 3).temperature) {
-                return "UP";
+                return "arrow up";
             } else if (readings.get(readings.size()-1).temperature < readings.get(readings.size() - 2).temperature
                     && readings.get(readings.size() - 2).temperature < readings.get(readings.size() - 3).temperature) {
-                return "DOWN";
+                return "arrow down";
             } else
-                return "STEADY";
+                return "alternate horizontal";
         } else
             return "Not Enough Data for trend analysis";
     }
