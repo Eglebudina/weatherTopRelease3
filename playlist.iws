@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d1f325e-3277-4c04-9b3d-f28684b8510d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/playlist.iws" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.iws" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weatherTop.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,19 +58,6 @@
       <recent name="$PROJECT_DIR$/app/utils" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,7 +78,7 @@
       <workItem from="1621456184039" duration="18915000" />
       <workItem from="1621630787632" duration="1125000" />
       <workItem from="1621632439356" duration="443000" />
-      <workItem from="1621633227607" duration="849000" />
+      <workItem from="1621633227607" duration="1129000" />
     </task>
     <servers />
   </component>
