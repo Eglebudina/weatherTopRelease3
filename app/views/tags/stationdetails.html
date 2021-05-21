@@ -12,7 +12,7 @@
             </div>
             <div class="content extra">
                 <div class="ui small feed list horizontal">
-                    <div class="item">Lat: ${_station.latitude.format('00.00')} </div>
+                    <div class="item">Lat: ${_station.latitude.format('00.00')}</div>
                     <div class="item">Lng: ${_station.longitude.format('00.00')}</div>
                 </div>
                 <h2 class="header">
@@ -32,7 +32,7 @@
                     <li>Min: ${_station.readings.temperature.min()} C</li>
                     <li>Max: ${_station.readings.temperature.max()} C</li>
                     #{/if}
-                    <li> Trend: <i class="${_station.presTrend} icon red"></i> </li>
+                    <li> Trend: <i class="${_station.presTrend} icon red"></i></li>
                 </ul>
             </div>
         </div>
@@ -44,14 +44,15 @@
                     #{if _station.readings.size() >= 1}
                     <li>${_station.windBeaufort(_station.readings.windSpeed.last())} bft</li>
                     <li>${_station.windDirection(_station.readings.windDirection.last())}</li>
-                    <li>Feels like: ${_station.windChill(_station.readings.windSpeed.last(), _station.readings.temperature.last())}</li>
+                    <li>Feels like: ${_station.windChill(_station.readings.windSpeed.last(),
+                        _station.readings.temperature.last())}
+                    </li>
                     <div class="ui divider"></div>
                     <li>Min: ${_station.readings.windSpeed.min()}</li>
                     <li>Max: ${_station.readings.windSpeed.max()}</li>
                     #{/if}
-                    <li> Trend: <i class="${_station.windTrend} icon green"></i> </li>
+                    <li> Trend: <i class="${_station.windTrend} icon green"></i></li>
                 </ul>
-
             </div>
         </div>
         <div class="card">
@@ -59,13 +60,13 @@
                 <i class="compress arrows alternate icon yellow huge right floated "></i>
                 <h3 class="header">Pressure</h3>
                 <ul class="ui list">
-                #{if _station.readings.size() >= 1}
+                    #{if _station.readings.size() >= 1}
                     <li class="header">${_station.pressure(_station.readings.pressure.last())} hpa</li>
                     <div class="ui divider"></div>
-                    <li class="header">Min: ${_station.pressure(_station.readings.pressure.min())} </li>
-                    <li class="header">Max: ${_station.pressure(_station.readings.pressure.max())} </li>
-                #{/if}
-                    <li> Trend: <i class="${_station.presTrend} icon yellow"></i> </li>
+                    <li class="header">Min: ${_station.pressure(_station.readings.pressure.min())}</li>
+                    <li class="header">Max: ${_station.pressure(_station.readings.pressure.max())}</li>
+                    #{/if}
+                    <li> Trend: <i class="${_station.presTrend} icon yellow"></i></li>
                 </ul>
             </div>
         </div>
