@@ -6,7 +6,7 @@ import models.Station;
 import models.Reading;
 import play.Logger;
 import play.mvc.Controller;
-import utils.Trends;
+
 
 public class StationCtrl extends Controller
 {
@@ -14,9 +14,6 @@ public class StationCtrl extends Controller
   {
     Station station = Station.findById(id);
     Logger.info ("Station id = " + id);
-    station.tempTrend = Trends.tempTrend(station.readings);
-    station.windTrend = Trends.windTrend(station.readings);
-    station.presTrend = Trends.presTrend(station.readings);
     render("station.html", station);
   }
 

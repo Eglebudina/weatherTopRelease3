@@ -8,14 +8,19 @@ import models.Reading;
 import models.Member;
 import play.Logger;
 import play.mvc.Controller;
-
+import utils.Trends;
 
 public class Dashboard extends Controller
 {
   public static void index() {
     Logger.info("Rendering Dasboard");
     Member member = Accounts.getLoggedInMember();
-    List<Station> stations = member.stations;
+      List<Station> stations = member.stations;
+      for(Station station : stations)    {
+          station.tempTrend = Trends.tempTrend(station.readings);
+          station.windTrend = Trends.windTrend(station.readings);
+          station.presTrend = Trends.presTrend(station.readings);
+      }
     render ("dashboard.html", stations);
   }
 
