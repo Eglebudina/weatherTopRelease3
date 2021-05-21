@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d1f325e-3277-4c04-9b3d-f28684b8510d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/weatherTop.iws" afterDir="false" />
-    </list>
+    <list default="true" id="6d1f325e-3277-4c04-9b3d-f28684b8510d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,6 +77,7 @@
       <workItem from="1621630787632" duration="1125000" />
       <workItem from="1621632439356" duration="443000" />
       <workItem from="1621633227607" duration="1129000" />
+      <workItem from="1621634571042" duration="66000" />
     </task>
     <servers />
   </component>
