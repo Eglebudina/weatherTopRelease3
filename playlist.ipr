@@ -14,7 +14,7 @@
       </ScalaCodeStyleSettings>
     </code_scheme>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16">
     <output url="file://$PROJECT_DIR$/tmp/classes" />
   </component>
   <component name="VcsDirectoryMappings">
@@ -22,9 +22,7 @@
   </component>
   <component name="libraryTable">
     <library name="play-1.5.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/Downloads/play-1.5.3.zip!/" />
-      </CLASSES>
+      <CLASSES />
       <JAVADOC>
         <root url="jar://$USER_HOME$/Downloads/play-1.5.3.zip!/play-1.5.3/documentation/api" />
       </JAVADOC>
