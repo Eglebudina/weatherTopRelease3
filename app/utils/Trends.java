@@ -1,6 +1,7 @@
 package utils;
 
 import models.Reading;
+import models.Station;
 
 import java.util.List;
 
@@ -14,7 +15,7 @@ public class Trends {
                     && readings.get(readings.size() - 2).temperature < readings.get(readings.size() - 3).temperature) {
                 return "arrow down";
             } else
-                return "arrows alternate horizontal";
+            return "arrows alternate horizontal";
         } else
             return "minus circle";
     }

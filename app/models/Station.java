@@ -21,9 +21,9 @@ public class Station extends Model {
     public String name;
     public double latitude;
     public double longitude;
-    public String tempTrend = " ";
-    public String windTrend = " ";
-    public String presTrend = " ";
+    public String tempTrend;
+    public String windTrend;
+    public String presTrend;
 
 
     public Station(String name, double latitude, double longitude) {
