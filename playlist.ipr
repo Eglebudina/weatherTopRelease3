@@ -22,7 +22,9 @@
   </component>
   <component name="libraryTable">
     <library name="play-1.5.3">
-      <CLASSES />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/Downloads/play-1.5.3.zip!/" />
+      </CLASSES>
       <JAVADOC>
         <root url="jar://$USER_HOME$/Downloads/play-1.5.3.zip!/play-1.5.3/documentation/api" />
       </JAVADOC>

@@ -28,6 +28,9 @@
                     #{if _station.readings.size() >= 1}
                     <li>${_station.readings.temperature.last()} C</li>
                     <li>${_station.calculateFahrenheit(_station.readings.temperature.last())} F</li>
+                    <li>Feels like: ${_station.windChill(_station.readings.windSpeed.last(),
+                        _station.readings.temperature.last())}
+                    </li>
                     <div class="ui divider"></div>
                     <li>Min: ${_station.readings.temperature.min()} C</li>
                     <li>Max: ${_station.readings.temperature.max()} C</li>
@@ -44,9 +47,7 @@
                     #{if _station.readings.size() >= 1}
                     <li>${_station.windBeaufort(_station.readings.windSpeed.last())} bft</li>
                     <li>${_station.windDirection(_station.readings.windDirection.last())}</li>
-                    <li>Feels like: ${_station.windChill(_station.readings.windSpeed.last(),
-                        _station.readings.temperature.last())}
-                    </li>
+
                     <div class="ui divider"></div>
                     <li>Min: ${_station.readings.windSpeed.min()}</li>
                     <li>Max: ${_station.readings.windSpeed.max()}</li>
