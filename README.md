@@ -4,7 +4,7 @@ assignment
 #Play is a high-productivity Java and Scala web application framework that integrates 
 the components and APIs you need for modern web application development.
 
-To open the app, follwo these steps:
+To open the app, follow these steps:
 1. copy the github repo to your local computer
 2. open your terminal and cd into the newly created app locally
 3. to run play framework you may need to run the path in the terminal if you don't have the play framework installed: PATH=$PATH:$HOME/bin:/usr/local/bin:$HOME/dev/play-1.5.3
