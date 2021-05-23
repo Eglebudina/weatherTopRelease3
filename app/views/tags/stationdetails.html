@@ -64,8 +64,8 @@
                     #{if _station.readings.size() >= 1}
                     <li class="header">${_station.pressure(_station.readings.pressure.last())} hpa</li>
                     <div class="ui divider"></div>
-                    <li class="header">Min: ${_station.pressure(_station.readings.pressure.min())}</li>
-                    <li class="header">Max: ${_station.pressure(_station.readings.pressure.max())}</li>
+                    <li class="header">Min: ${_station.readings.pressure.min())}</li>
+                    <li class="header">Max: ${_station.readings.pressure.max())}</li>
                     #{/if}
                     <li> Trend: <i class="${_station.presTrend} icon yellow"></i></li>
                 </ul>
