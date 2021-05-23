@@ -46,7 +46,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.23424494" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -85,7 +85,7 @@
       <workItem from="1621668949850" duration="1281000" />
       <workItem from="1621686161250" duration="5349000" />
       <workItem from="1621783065149" duration="335000" />
-      <workItem from="1621783410364" duration="2611000" />
+      <workItem from="1621783410364" duration="2713000" />
     </task>
     <servers />
   </component>
